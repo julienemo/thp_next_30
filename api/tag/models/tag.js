@@ -13,7 +13,6 @@ module.exports = {
           lower: true, // result in lower case
         })
       );
-      model.set("date", new Date());
     } else if (options.method === "update" && attrs.title) {
       attrs.slug = slugify(attrs.title, {
         remove: /[*+~.,()'"!:@]/g,

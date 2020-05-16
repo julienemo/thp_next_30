@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tags",
+  "info": {
+    "name": "Tag"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "slug": {
+      "type": "string"
+    },
+    "articles": {
+      "via": "tags",
+      "collection": "articles",
+      "dominant": true
+    },
+    "color": {
+      "type": "string",
+      "regex": "^#([A-Fa-f0-9]{6})$",
+      "required": true,
+      "unique": true
+    }
+  }
+}

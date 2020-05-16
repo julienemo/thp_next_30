@@ -13,4 +13,10 @@ To see result,
 
 - `/articles` for all articles
 - `/articles/id` for a specific article with id
-- `/articles?slug="slug"` for a specific article with slug 
+- `/articles?slug="slug"` for a specific article with slug
+
+* * *
+**Discoveries**
+
+1. in a component, `style` attribute does not take a string as in HTML and JavaScript, but an object. Keys are in camelCase.
+2. 

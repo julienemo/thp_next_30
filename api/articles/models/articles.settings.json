@@ -20,10 +20,6 @@
       "type": "text",
       "maxLength": 300
     },
-    "pulished_on": {
-      "type": "date",
-      "required": true
-    },
     "content": {
       "type": "richtext",
       "required": true
@@ -43,6 +39,13 @@
       "type": "string",
       "required": false,
       "unique": false
+    },
+    "date": {
+      "type": "date"
+    },
+    "tags": {
+      "collection": "tag",
+      "via": "articles"
     }
   }
 }
